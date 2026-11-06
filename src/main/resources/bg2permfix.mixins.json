@@ -1,0 +1,12 @@
+{
+    "required": true,
+    "package": "me.atlas.bg2permfix.mixin",
+    "compatibilityLevel": "JAVA_17",
+    "minVersion": "0.8",
+    "mixins": [
+        "BuildingUtilsMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

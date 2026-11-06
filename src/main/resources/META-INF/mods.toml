@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+issueTrackerURL = "https://github.com/Direwolf20-MC/BuildingGadgets2/issues/214"
+
+[[mods]]
+modId = "bg2permfix"
+version = "${file.jarVersion}"
+displayName = "BG2 Permission Fix"
+authors = "atlas"
+# Server-side only: clients without this mod can connect fine.
+displayTest = "IGNORE_ALL_VERSION"
+description = '''
+Fixes Building Gadgets 2 checking build permissions at the template-relative
+coordinates (near 0,0) instead of the actual placement position.
+See https://github.com/Direwolf20-MC/BuildingGadgets2/issues/214
+'''
+
+[[dependencies.bg2permfix]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "SERVER"
+
+[[dependencies.bg2permfix]]
+modId = "buildinggadgets2"
+mandatory = true
+versionRange = "[1.0.6,)"
+ordering = "AFTER"
+side = "SERVER"
